@@ -59,3 +59,12 @@ footer{
   font-family: 'Open Sans', sans-serif;
   font-size:0.875rem;
 }
+
+
+@media only screen and (max-width:520px){
+  footer{
+   position:relative;
+   margin-top:1rem;
+  }
+
+}
