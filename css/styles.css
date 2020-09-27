@@ -137,3 +137,13 @@ em{
     font-size:0.75rem;
  }
 }
+
+@media only screen and (max-width:460px){
+  #wrapper{
+   height:100vh;
+ }
+
+ body{
+   display:block;
+ }
+}
