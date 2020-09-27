@@ -1,0 +1,139 @@
+:root{
+  --red: #8C1C13;
+  --alt-red: #9C0D25;
+  --yellow: #FAA916;
+  --white: #F8F1FF;
+  --green: #07784D;
+  --dark-green: #024D30;
+  --light-green: #068E5A;
+  font-size:16px;
+}
+
+body{
+  background: radial-gradient(var(--light-green), var(--green), var(--dark-green))
+}
+
+#wrapper{
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+h1{
+  font-size:clamp(2.5rem, 5vw, 4rem);
+  color:var(--yellow);
+  font-weight: 600;
+  text-align: center;
+}
+
+h2, .greeting{
+  font-size:clamp(2.25rem, 5vw, 2.8rem);
+  color:var(--white);
+  background: var(--red);
+  padding:16px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+
+.announcement{
+  color:var(--white);
+  font-size:clamp(0.75rem, 5vw, 1.25rem);
+  margin: 1rem 1rem 0 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.deadline{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:20px auto 0 auto;
+  padding-top: 1rem;
+  border-top: 2px solid var(--white);
+  max-width:800px;
+}
+
+.deadline-meta{
+  color: var(--white);
+  padding-top:0.75rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.meta--hide{
+  display:none;
+}
+
+.deadline-unit{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size:1rem;
+}
+
+.deadline-format{
+  background: var(--alt-red);
+  margin: 0 1rem;
+  height: 100px;
+  width: 100px;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position:relative;
+}
+
+.deadline-format__wrapper{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+i{
+  color:var(--yellow);
+}
+
+h4{
+  font-size:2.5rem;
+  font-weight: bold;
+}
+
+em{
+  color:#E0554B;
+}
+
+.deadline-format span{
+  text-transform: uppercase;
+}
+
+
+footer{
+  flex-shrink: 0;
+  background-color:#000;
+  color:#fff;
+}
+
+@media only screen and (max-width:800px){
+ .deadline-format{
+   margin: 0 0.5rem;
+   height: 60px;
+    width: 60px;
+ }
+
+ h4{
+   font-size:2rem;
+ }
+
+
+ .deadline-unit{
+    font-size:0.75rem;
+ }
+}
