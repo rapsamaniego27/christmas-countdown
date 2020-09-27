@@ -97,7 +97,7 @@ h2, .greeting{
   transform: translate(-50%, -50%);
 }
 
-i{
+.fa-holly-berry{
   color:var(--yellow);
 }
 
@@ -115,11 +115,6 @@ em{
 }
 
 
-footer{
-  flex-shrink: 0;
-  background-color:#000;
-  color:#fff;
-}
 
 @media only screen and (max-width:800px){
  .deadline-format{
